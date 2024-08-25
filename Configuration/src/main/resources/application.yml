@@ -1,13 +1,17 @@
 spring:
   profiles:
-    active: native
+    active: cloud
   application:
     name: Configuration
   cloud:
     config:
       server:
-        native:
-          search-locations: file://${user.home}/Desktop/Project2/Configuration/config/{application}/{profile}
+        git:
+          uri: https://github.com/MunSunch/SpringCloudConfig.git
+          clone-on-start: true
+          default-label: cloud
+          search-paths:
+            - 'config/{application}/{profile}'
 
 server:
   port: 8888
