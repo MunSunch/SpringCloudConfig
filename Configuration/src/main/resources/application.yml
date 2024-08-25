@@ -13,11 +13,5 @@ spring:
           search-paths:
             - 'config/{application}/{profile}'
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
-
 server:
   port: 8888
