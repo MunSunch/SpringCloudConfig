@@ -5,7 +5,7 @@ springdoc:
     path: /calculator/api-docs-ui
 
 prop:
-  value: 'prod'
+  value: 'proddddddddd'
 
 service:
   rate: 20
